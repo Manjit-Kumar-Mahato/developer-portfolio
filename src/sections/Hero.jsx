@@ -4,31 +4,31 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
-  "Java",
-  "Spring Boot",
-  "Spring Data JPA",
-  "Hibernate",
-  "REST APIs",
-  "MySQL",
-  "Data Structures",
-  "Algorithms",
-  "PostgreSQL",
-  "Spring MVC",
-  "Thymeleaf",
-  "JDBC",
-  "Servlets",
-  "JSP",
-  "Maven",
-  "Git",
-  "GitHub",
-  "JUnit",
-  "Tomcat",
-  "AWS",
-  "OOP",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
+    "Java",
+    "Spring Boot",
+    "Spring Data JPA",
+    "Hibernate",
+    "REST APIs",
+    "MySQL",
+    "Data Structures",
+    "Algorithms",
+    "PostgreSQL",
+    "Spring MVC",
+    "Thymeleaf",
+    "JDBC",
+    "Servlets",
+    "JSP",
+    "Maven",
+    "Git",
+    "GitHub",
+    "JUnit",
+    "Tomcat",
+    "AWS",
+    "OOP",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
 ];
 
 const highlightedSkills = [
@@ -106,9 +106,11 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
-                                Contact Me <ArrowRight className="w-5 h-5" />
-                            </Button>
+                            <a href="#contact">
+                                <Button size="lg">
+                                    Contact Me <ArrowRight className="w-5 h-5" />
+                                </Button>
+                            </a>
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5" />
                                 Download CV
