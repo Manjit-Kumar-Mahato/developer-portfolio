@@ -75,6 +75,12 @@ export const Contact = () => {
                 );
             }
 
+            if (!serviceId || !templateId || !publicKey) {
+                throw new Error(
+                    "EmailJS configuration is missing. Please check your environment variables."
+                );
+            }
+
             await emailjs.send(
                 serviceId,
                 templateId,
@@ -82,6 +88,7 @@ export const Contact = () => {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
+                    time: new Date().toLocaleString(),
                 },
                 publicKey
             );
@@ -177,6 +184,7 @@ export const Contact = () => {
                                     Message
                                 </label>
                                 <textarea
+                                    id="message"
                                     rows={5}
                                     required
                                     value={formData.message}
