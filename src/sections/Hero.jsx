@@ -111,10 +111,16 @@ export const Hero = () => {
                                     Contact Me <ArrowRight className="w-5 h-5" />
                                 </Button>
                             </a>
-                            <AnimatedBorderButton>
-                                <Download className="w-5 h-5" />
-                                Download CV
-                            </AnimatedBorderButton>
+                            <a
+                                href="/Manjit_Kumar_Mahato_Resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <AnimatedBorderButton>
+                                    <Download className="w-5 h-5" />
+                                    Download Resume
+                                </AnimatedBorderButton>
+                            </a>
                         </div>
 
                         {/* Social Links */}
@@ -127,6 +133,8 @@ export const Hero = () => {
                                 <a
                                     key={idx}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     <social.icon className="w-5 h-5" />
@@ -138,7 +146,7 @@ export const Hero = () => {
 
 
                     {/* Right Column - Profile Image */}
-                    <div className="relatice animate-fade-in animation-delay-300">
+                    <div className="relative animate-fade-in animation-delay-300">
                         {/* Profile Image */}
                         <div className="relative max-w-md mx-auto">
                             <div
@@ -150,7 +158,7 @@ export const Hero = () => {
                             <div className="relative glass rounded-3xl p-2 glow-border">
                                 <img
                                     src="/profile-photo.jpg"
-                                    alt="Pedro Machado"
+                                    alt="Manjit Kumar Mahato"
                                     className="w-full aspect-[4/5] object-cover rounded-2xl"
                                 />
 
