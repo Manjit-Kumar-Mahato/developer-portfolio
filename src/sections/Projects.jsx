@@ -36,7 +36,7 @@ const projects = [
             "Bootstrap",
         ],
         link: "#",
-        github: "https://github.com/Manjit-Kumar-Mahato/Enotes-spring-boot-project",
+        github: "https://github.com/Manjit-Kumar-Mahato/Notes-Manager",
     },
 
     {
